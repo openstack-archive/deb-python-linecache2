@@ -3,3 +3,6 @@
 *.egg-info
 *.pyc
 *.egg
+ChangeLog
+/build/
+/dist/
