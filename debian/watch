@@ -1,3 +1,4 @@
 version=3
-http://pypi.python.org/packages/source/l/linecache2 linecache2-(.*).tar.gz
+opts="uversionmangle=s/\.(b|rc)/~$1/" \
+https://github.com/testing-cabal/linecache2/tags .*/(\d[\d\.]+)\.tar\.gz
 
