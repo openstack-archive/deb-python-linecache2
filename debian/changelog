@@ -1,0 +1,5 @@
+python-linecache2 (1.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #791790)
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 08 Jul 2015 13:55:46 +0200
