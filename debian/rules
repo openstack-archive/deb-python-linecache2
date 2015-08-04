@@ -32,6 +32,16 @@ override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
 	rm -rf build
 
+override_dh_auto_test:
+ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	@echo "===> Running tests"
+	set -ex && for i in $(PYTHONS) $(PYTHON3S) ; do \
+		PYMAJOR=`echo $$i | cut -d'.' -f1` ; \
+		echo "===> Testing with python$$i (python$$PYMAJOR)" ; \
+		PYTHON=python$$i python$$PYMAJOR-unit2; \
+	done
+endif
+
 # Commands not to run
 override_dh_installcatalogs:
 override_dh_installemacsen override_dh_installifupdown:

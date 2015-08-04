@@ -15,6 +15,7 @@ Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: python-fixtures,
                      python-unittest2,
                      python3-fixtures,
+                     python3-unittest2,
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-linecache2.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-linecache2.git
