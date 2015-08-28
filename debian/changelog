@@ -1,9 +1,9 @@
-python-linecache2 (1.0.0-2) UNRELEASED; urgency=medium
+python-linecache2 (1.0.0-2) unstable; urgency=medium
 
-  * d/control,rules: Add required BD's and enable unit test execution. 
+  * Runs unit tests during build, thanks to a patch from James Page
+    (Closes: #795889).
 
- -- James Page <james.page@ubuntu.com>  Tue, 04 Aug 2015 12:33:39 +0200
-
+ -- Thomas Goirand <zigo@debian.org>  Fri, 28 Aug 2015 15:46:28 +0000
 python-linecache2 (1.0.0-1) unstable; urgency=medium
 
   * Initial release. (Closes: #791790)
