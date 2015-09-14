@@ -38,7 +38,7 @@ ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 	set -ex && for i in $(PYTHONS) $(PYTHON3S) ; do \
 		PYMAJOR=`echo $$i | cut -d'.' -f1` ; \
 		echo "===> Testing with python$$i (python$$PYMAJOR)" ; \
-		PYTHON=python$$i python$$PYMAJOR-unit2; \
+		PYTHONPATH=. PYTHON=python$$i python$$PYMAJOR-unit2; \
 	done
 endif
 
