@@ -1,3 +1,9 @@
+python-linecache2 (1.0.0-3) UNRELEASED; urgency=medium
+
+  * Fixed VCS URLs (https).
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:41:09 +0100
+
 python-linecache2 (1.0.0-2) unstable; urgency=medium
 
   * Runs unit tests during build, thanks to a patch from James Page
