@@ -1,4 +1,4 @@
-python-linecache2 (1.0.0-3) UNRELEASED; urgency=medium
+python-linecache2 (1.0.0-3) unstable; urgency=medium
 
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
